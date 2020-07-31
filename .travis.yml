@@ -4,7 +4,7 @@ addons:
   sonarcloud:
     organization: "sonarcloud"
     token:
-      secure: "travis encrypt 8344bb65eb93358393fb3800783110a7617a8959"
+      secure: "8344bb65eb93358393fb3800783110a7617a8959"
 
 script:
   - make clean
