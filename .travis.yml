@@ -3,9 +3,8 @@ sudo: false
 addons:
   sonarcloud:
     organization: "durbin-164"
-    token:
-      secure: "travis encrypt 8344bb65eb93358393fb3800783110a7617a8959" # encrypted value of your token
-
+    token: ${SONAR_TOKEN}
+      
 script:
   - make clean
   # Wraps the compilation with the Build Wrapper to generate configuration (used
