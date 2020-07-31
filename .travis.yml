@@ -2,9 +2,9 @@ sudo: false
 
 addons:
   sonarcloud:
-    organization: "sonarcloud"
+    organization: "durbin-164"
     token:
-      secure: "41ed631c510c03b70634e626148cb676b40b3916"
+      secure: "8344bb65eb93358393fb3800783110a7617a8959"
 
 script:
   - make clean
