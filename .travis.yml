@@ -4,7 +4,7 @@ addons:
   sonarcloud:
     organization: "sonarcloud"
     token:
-      secure: "8344bb65eb93358393fb3800783110a7617a8959"
+      secure: "41ed631c510c03b70634e626148cb676b40b3916"
 
 script:
   - make clean
