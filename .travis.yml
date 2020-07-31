@@ -4,7 +4,7 @@ addons:
   sonarcloud:
     organization: "sonarcloud"
     token:
-      secure: "uHBKhFpDoOw3yghbGAjAUX3/8i7f2uoXUPnc520fhD1c6EDkfeRlA046wbICxKokV55ghOhXmD9hPS+xECllO71REPQ9pG9conp9CFnJ6m0G7co0AH2ur3UeCiq2/vyCMAPVhMgS3Y9CIj2zpioEebxEZl9O+1283LY1mRoepWC5LIpufKdp07RgKvWa62crL3YENE7Z8fJsC21bz//uZaU6YPG5ICl7UfpK1hsqHrAZFVU/PjloDx2Ff2fMl0oR8Pf5LefkhwILojo3FuiAGAhVYSUWlOXu3vFBrIiwUo0B+PQxeO/F2QV/cj/0nW8d0+C5PvZBTG8SQAbph+3zmD0TqBtEERal4fD/vEkgp9XyWy9PCgVXbYXasXJA4wbt0CKujbGGqJP9Hl44fHzbobiBxFL6xsbSZm+kYsN2NZ+5cKg87kf2j6YkWZoc7UZq0pI8LAFG4dabZsRdKGWa7+s/JFLTg1eZIMMW0vvRAebIZiL3Y7G+Q0bm21xBKrO1EKHOJ26bDyQtHE+f5GlGpTiA/1jMIXkgONIq7Ka8aqFBk8nxeG84HCNb4vRFaUrivk7+NOFDOEgIiFmV89DdbcelElhshA1t06fsiQoomkhcobsd9h8VPUTCGfIPTDu/1DHxDwEmbX4UgJx49ULsQXcu82D6HlZsDzv/IAmtVVU="
+      secure: "travis encrypt 8344bb65eb93358393fb3800783110a7617a8959"
 
 script:
   - make clean
@@ -21,9 +21,9 @@ cache:
   directories:
     - '$HOME/.sonar/cache'
 
-# Don't copy the following part if your usnig this project as a starting point of yours
-notifications:
-  email: false
-  webhooks:
-    - secure: "ouG1h56cuJejRCsCHZOc4X0lDrpZyaiXOmzYMX0qnKXsjx17ZRMdkunA11pzrABAzO2l4rq5aMMNLs2Obwp/jiuV11SeyucgGzgqwdUQivR9noqpI9yq9VeaRBuK8dHMG0RtRVH0HAdv53VaPBYExj860FdBOUMzgvxE1v7EPIqpfbC9XcIPkZoIkMCP0E8nBE5R3is1ZY49fgFi3+UpQP5EjfeX2E8n0tHzs6uwO7QcnB0GNfUcjKGShjxecPEB77oIv8kcaIEqUBdRsuwwIfidtOsgggGpchaeJ1kEVTESLDz7QPf73ng4j9LP7whb0rtVZYpUr+TI0MoLZu5/WptErelei1eBniHR8CbSbhi6FQ07Pyx7DAc9xmBjgBVbLY/RROGfguAPd+AWn/E6WthN31q6/EpeX7wOkNDjOk6CUPqGgHpQ4BJDy82uV8N3H/uMaonwCeyxKhWxlOWGWBEUwN3rXRt63wMNYABemBiXdjlVxnh1949Drhd+LBS1ebeikq5SmOrZCA2IrHPcTEAtU7bCaCoe5vOm9XYQmxfrNg88aiQR26SjVK2A55x2t8DXqkjS8/7Q9k7gg5CBG5iEOdrSPw8UKTuy2t8SaUlaidyZTdbUT5L3v/UKgucex+hRN8AzWDJ6u9Hl2qdaxZKOSJjo+NV7ZsLxrVvafrg="
-  on_start: always
+# # Don't copy the following part if your usnig this project as a starting point of yours
+# notifications:
+#   email: false
+#   webhooks:
+#     - secure: "ouG1h56cuJejRCsCHZOc4X0lDrpZyaiXOmzYMX0qnKXsjx17ZRMdkunA11pzrABAzO2l4rq5aMMNLs2Obwp/jiuV11SeyucgGzgqwdUQivR9noqpI9yq9VeaRBuK8dHMG0RtRVH0HAdv53VaPBYExj860FdBOUMzgvxE1v7EPIqpfbC9XcIPkZoIkMCP0E8nBE5R3is1ZY49fgFi3+UpQP5EjfeX2E8n0tHzs6uwO7QcnB0GNfUcjKGShjxecPEB77oIv8kcaIEqUBdRsuwwIfidtOsgggGpchaeJ1kEVTESLDz7QPf73ng4j9LP7whb0rtVZYpUr+TI0MoLZu5/WptErelei1eBniHR8CbSbhi6FQ07Pyx7DAc9xmBjgBVbLY/RROGfguAPd+AWn/E6WthN31q6/EpeX7wOkNDjOk6CUPqGgHpQ4BJDy82uV8N3H/uMaonwCeyxKhWxlOWGWBEUwN3rXRt63wMNYABemBiXdjlVxnh1949Drhd+LBS1ebeikq5SmOrZCA2IrHPcTEAtU7bCaCoe5vOm9XYQmxfrNg88aiQR26SjVK2A55x2t8DXqkjS8/7Q9k7gg5CBG5iEOdrSPw8UKTuy2t8SaUlaidyZTdbUT5L3v/UKgucex+hRN8AzWDJ6u9Hl2qdaxZKOSJjo+NV7ZsLxrVvafrg="
+#   on_start: always
